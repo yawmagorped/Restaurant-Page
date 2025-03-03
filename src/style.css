@@ -1,3 +1,29 @@
+* {
+    margin: 0;
+}
 body {
-    background-color: gray;
+    background-color: rgb(53, 30, 0);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    border-bottom: 10px solid black;
+    padding: 16px;
+}
+
+.module {
+    background-color: rgb(204, 133, 0);
+    margin: 0px 128px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.module img {
+    height: 500px;
+}
+.module.flipped {
+    background-color: rgb(255, 195, 83);
+    flex-direction: row-reverse;
 }
