@@ -7,4 +7,6 @@ buttons.forEach(btn => {
     btn.addEventListener('click',() => {
         loadPage(btn.id);
     })
-})
+});
+
+loadPage("home");
