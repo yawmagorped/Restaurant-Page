@@ -1,4 +1,10 @@
 import "./style.css";
-import "./page-load.js"
+import { loadPage } from "./page-load";
 
-console.log("hello wolrd!");
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(btn => {
+    btn.addEventListener('click',() => {
+        loadPage(btn.id);
+    })
+})
